@@ -1,0 +1,94 @@
+<!DOCTYPE html>
+<html>
+<head>
+    <meta charset="UTF-8">
+    <title>NesoLogic</title>
+    <link rel="stylesheet" type="text/css" href="styles/general.css">
+    <link rel="stylesheet" type="text/css" href="styles/container.css">
+    <link rel="stylesheet" type="text/css" href="styles/side-bar.css">
+    <link rel="stylesheet" type="text/css" href="styles/main-content.css">
+    <link rel="stylesheet" type="text/css" href="styles/main-input.css">
+</head>
+<body>
+  <div class="container">
+    <div class="sidebar" id="sidebar">
+      <div class="sidebar-section-logo">
+        <img class="logo-sidebar" id="logo-sidebar" src="icons/HonokaPy.png" alt="logo-honoka-python">
+      </div>
+      <div class="sidebar-section-nav">
+        <div class="sidebar-section-nav-up">
+          <li>
+            <img src="icons/icon-home.png" alt="Home Icon" class="icon">
+            <p>Home</p>
+          </li>
+          <li>
+            <img src="icons/icon-history.png" alt="History Icon" class="icon">
+            <p>History</p>
+          </li>
+          <li>
+            <img src="icons/icon-more-apps.png" alt="More Apps Icon" class="icon">
+            <p>More Apps</p>
+          </li>
+        </div>
+        <div class="sidebar-section-nav-line"></div>
+        <div class="sidebar-section-nav-down">
+          <li>
+            <img src="icons/icon-setting.png" alt="Settings Icon" class="icon">
+            <p>Settings</p>
+          </li>
+          <li>
+            <img src="icons/icon-about-us.png" alt="About Us Icon" class="icon">
+            <p>About Us</p>
+          </li>
+        </div>
+      </div>
+    </div>
+    <div class="main-content">
+      <div class="container-input">
+        <div class="logic-input">
+          <!-- Sección para ingresar la función lógica -->
+          <input type="text" id="logic-function" placeholder="Write your logic function using the operator buttons">
+          <button id="submit-button" onclick="getFunction()">
+            <img src="icons/icon-evaluate.png" alt="icon-evaluate">
+            Calculate
+          </button>
+        </div>
+        <div class="operator-buttons">
+          <button class="operator-button">
+            AND
+            <img src="" alt="">
+          </button>
+          <button class="operator-button">OR</button>
+          <button class="operator-button">NOT</button>
+          <button class="operator-button">NAND</button>
+          <button class="operator-button">XOR</button>
+          <button class="operator-button">NOR</button>
+          <button class="operator-button">XNOR</button>
+        </div>
+      </div>
+      <div class="grid-container">
+        <div class="truth-table">
+          <!-- Tabla de Verdad -->
+          <h2>Tabla de Verdad</h2>
+          <!-- Contenido de la tabla de verdad -->
+        </div>
+        <div class="karnaugh-table">
+          <h2>karnaugh map</h2>
+        </div>
+        <div class="timing-diagram">
+          <!-- Diagrama de Temporización -->
+          <h2>Diagrama de Temporización</h2>
+          <!-- Contenido del diagrama de temporización -->
+        </div>
+        <div class="logic-circuit">
+          <!-- Circuito Lógico -->
+          <h2>Circuito Lógico</h2>
+          <!-- Contenido del circuito lógico -->
+        </div>
+      </div>
+    </div>
+  </div>
+  <script src="barMain.js"></script>
+  <script src="getFunction.js"></script>
+</body>
+</html>

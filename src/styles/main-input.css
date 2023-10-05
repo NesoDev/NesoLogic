@@ -1,0 +1,77 @@
+@import url('https://fonts.googleapis.com/css2?family=Indie+Flower&display=swap');
+
+/* Section para la función lógica */
+
+.logic-input {
+    font-family: Arial, sans-serif;
+    font-size: 11px;
+    background-color: rgba(227, 227, 227, 0);
+    padding: 0px;
+    width: 100%;
+    display: flex;
+    justify-content: space-between;
+    gap: 20px;
+}
+
+#logic-function {
+    background-color: #303030;
+    width: 100%;
+    height: 27px;
+    color: #8c8c8c;
+    border: none;
+    border-bottom: 2px solid #5e5e5e;
+    border-radius: 0.2rem;
+    outline: none;
+    padding: 7px 10px 7px 10px;
+    font-family: 'monospace',cursive;
+    font-size: 20px;
+}
+
+#logic-function:hover, #logic-function:focus {
+    background-color: #1d1d1d;
+}
+
+#submit-button {
+    border: none;
+    background: #1d1d1d;
+    color: #fff;
+    /*color: #858585;*/
+    display: flex;
+    flex-direction: row;
+    align-items: center;
+    gap: 10px;
+    padding: 10px 15px 10px 15px;
+    border-radius: 1rem;
+    font-family: 'Gill Sans', 'Gill Sans MT', Calibri, 'Trebuchet MS', sans-serif;
+    font-size: 18px;
+    filter: grayscale(1);
+}
+
+#submit-button:hover {
+    filter: grayscale(0);
+    background: #161616;
+    color: #50cf9e;
+    cursor: pointer;
+}
+
+.operator-buttons {
+    width: 100%;
+    display: flex;
+    flex-direction: row;
+    justify-content: space-between;
+}
+
+.operator-button {
+    background: #1d1d1d;
+    color: #fff;
+    border: none;
+    border-radius: 0.6rem;
+    padding: 7px 20px 7px 20px;
+    font-family: 'Gill Sans', 'Gill Sans MT', Calibri, 'Trebuchet MS', sans-serif;
+    font-size: 17px;
+}
+
+.operator-button:hover {
+    background-color: #161616;
+    color: #50cf9e;
+}

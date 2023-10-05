@@ -1,0 +1,8 @@
+/* Contenedor principal */
+.container {
+    background-color: #1d1d1d;
+    display: grid;
+    grid-template-columns: 12.5rem 1fr;
+    grid-template-areas: "sidebar main-content";
+    height: auto;
+}
